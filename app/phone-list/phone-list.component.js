@@ -17,7 +17,7 @@
 			self.orderProp='age'; //Sets Default Sorting Order and not leave a blank option in drop down
 
 			$http.get('phones/phones.json').then(function(response){
-				self.phones = response.data.slice(0,1);
+				self.phones = response.data;
 			});
 		}]
 	}); 
