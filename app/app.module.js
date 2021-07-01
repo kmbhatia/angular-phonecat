@@ -1,5 +1,7 @@
 angular.module('phonecatApp', [
-	
-	'phoneList'
+	'ngRoute',
+	'phoneList',
+	'phoneDetail'
 
 	]);
+//We configure dependencies of the application in this file

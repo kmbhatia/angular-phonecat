@@ -5,13 +5,16 @@
     <title>My HTML File</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
     <script src="phone-list/phone-list.module.js"></script>
     <script src="phone-list/phone-list.component.js"></script>
+    <script src="phone-detail/phone-detail.module.js"></script>
+    <script src="phone-detail/phone-detail.component.js"></script>
   </head>
   <body>
-    <!--Using a custom component to render a list of Phones-->
-    <phone-list></phone-list>
-
+    <!-- Removed <phone-list> and replaced with ng-view to display views using ng-route-->
+    <div ng-view></div>
   </body>
 </html>
